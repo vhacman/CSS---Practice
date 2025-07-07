@@ -1,0 +1,38 @@
+CSS
+
+E' un insieme di regole che migliorano l'aspetto delle pagine web.
+Nei primi anni di Internet, i browser adottavano il CSS perché offriva nuova possibilità per realizzare design visivamente milgiori e creativi.
+Con lo sviluppo dei browser e la loro diffusione anche su dispositivi non tradizionali, le funzionalità del CSS si sono evolute parallelamente.
+
+L’evoluzione dei layout in CSS
+Questa evoluzione ha portato all’introduzione del design responsivo e a opzioni di layout come flexbox, grid e box model.
+Si può dire che il layout sia uno degli elementi più importanti nella progettazione di una buona pagina web, poiché consente di suddividere la pagina in sezioni, rendendola più leggibile e presentabile.
+L’obiettivo di un layout CSS è progettare una pagina che abbia un aspetto ottimale in qualsiasi dimensione della finestra del browser (il cosiddetto viewport).
+
+Il layout di CSS definisce come viene organizzato il contenuto della pagina.
+
+PROPRIETA' DISPLAY
+Una proprietà fondamentale per il layout di CSS è 'display' --> specifica il tipo di riquadro (box) da usare per un elemento html
+Per esempio un elemento display: block --> viene reso come un box a sé stante.
+
+Layout moderni: Flexbox e Grid
+
+Flexbox
+Abbreviazione di flexible box model.
+È un layout monodimensionale, usato per disporre gli elementi in riga o colonna.
+Adatto per piccole sezioni o elementi che devono adattarsi allo spazio disponibile.
+Gli elementi possono espandersi o restringersi per mantenere un design responsivo.
+
+Grid
+Layout bidimensionale: dispone gli elementi su righe e colonne.
+Adatto per layout complessi o strutture su larga scala.
+Richiede una definizione più sistematica delle regole per evitare problemi.
+Può essere più complicato da gestire, ma consente grande flessibilità e controllo.
+
+
+Quando usare Flexbox o Grid
+Flexbox: ideale per spazi piccoli e layout lineari.
+Grid: ideale per pagine complesse con struttura a griglia.
+Nella pratica, è comune combinare più layout nella stessa pagina.
+
+

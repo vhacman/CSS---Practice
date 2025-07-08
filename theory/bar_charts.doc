@@ -1,0 +1,11 @@
+Usare flexbox per costruire bar chart verticali e orrizzontali con HTML+CSS si può fare: si chiamano Flex Charts.
+
+
+<div class="row">
+  <div class="label">Preferred Dishes</div>
+  <div class="container">
+    <div class="dish pasta">35%</div>
+    <div class="dish pizza">50%</div>
+    <div class="dish burrito">15%</div>
+  </div>
+</div>

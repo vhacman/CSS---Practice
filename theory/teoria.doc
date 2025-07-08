@@ -2,4 +2,110 @@ CSS
 
 E' un insieme di regole che migliorano l'aspetto delle pagine web.
 Nei primi anni di Internet, i browser adottavano il CSS perché offriva nuova possibilità per realizzare design visivamente milgiori e creativi.
+Con lo sviluppo dei browser e la loro diffusione anche su dispositivi non tradizionali, le funzionalità del CSS si sono evolute parallelamente.
+
+L’evoluzione dei layout in CSS
+Questa evoluzione ha portato all’introduzione del design responsivo e a opzioni di layout come flexbox, grid e box model.
+Si può dire che il layout sia uno degli elementi più importanti nella progettazione di una buona pagina web, poiché consente di suddividere la pagina in sezioni, rendendola più leggibile e presentabile.
+L’obiettivo di un layout CSS è progettare una pagina che abbia un aspetto ottimale in qualsiasi dimensione della finestra del browser (il cosiddetto viewport).
+
+Il layout di CSS definisce come viene organizzato il contenuto della pagina.
+
+PROPRIETA' DISPLAY
+Una proprietà fondamentale per il layout di CSS è 'display' --> specifica il tipo di riquadro (box) da usare per un elemento html
+Per esempio un elemento display: block --> viene reso come un box a sé stante.
+
+Layout moderni: Flexbox e Grid
+
+Flexbox
+Abbreviazione di flexible box model.
+È un layout monodimensionale, usato per disporre gli elementi in riga o colonna.
+Adatto per piccole sezioni o elementi che devono adattarsi allo spazio disponibile.
+Gli elementi possono espandersi o restringersi per mantenere un design responsivo.
+
+Grid
+Layout bidimensionale: dispone gli elementi su righe e colonne.
+Adatto per layout complessi o strutture su larga scala.
+Richiede una definizione più sistematica delle regole per evitare problemi.
+Può essere più complicato da gestire, ma consente grande flessibilità e controllo.
+
+
+Quando usare Flexbox o Grid
+Flexbox: ideale per spazi piccoli e layout lineari.
+Grid: ideale per pagine complesse con struttura a griglia.
+Nella pratica, è comune combinare più layout nella stessa pagina.
+
+
+PROPRIETA' DI ALLINEAMENTO
+in un contenitore FLEX, l'allineamento degli elementi può essere gestito con 4 proprietà principali:
+
+JUSTIFY-CONTENT.
+allinea gli elementi lungo l'asse principale, cioè l'asse orizzontale
+se flex-direction: row;
+È usato per spaziare o distribuire gli elementi nel contenitore
+
+
+| Valore          | Descrizione                             |
+| --------------- | --------------------------------------- |
+| `flex-start`    | Allinea a sinistra (valore predefinito) |
+| `flex-end`      | Allinea a destra                        |
+| `center`        | Al centro                               |
+| `space-between` | Spazio equo tra gli elementi            |
+| `space-around`  | Spazio equo attorno agli elementi       |
+| `space-evenly`  | Spazio perfettamente uguale ovunque     |
+
+ALIGN-ITMES.
+allinea gli elementi sull'asse trasversale, cioè verticale se flex-direction:row.
+Influiscw sull'allineamento degli elementi dentro il contenitore.
+
+| Valore       | Descrizione                                                |
+| ------------ | ---------------------------------------------------------- |
+| `stretch`    | Allunga gli elementi per riempire il contenitore (default) |
+| `flex-start` | Allinea in alto                                            |
+| `flex-end`   | Allinea in basso                                           |
+| `center`     | Centra verticalmente                                       |
+| `baseline`   | Allinea secondo la linea di base del testo                 |
+
+ALIGN-SELF.
+Permette a un singolo elemento all'interno del FLEX container di sovrascrivere align-items.
+Utile per personalizzare il comportamento di uno specifico item.
+
+
+.box3 {
+  align-self: flex-end;
+}
+
+
+ALIGN-CONTENT.
+Serve solo quando ci sono più righe (flex-wrap: wrap;)
+Gestisce lo spazio tra le righe nel contenitore Flex.
+
+| Valore          | Descrizione                                 |
+| --------------- | ------------------------------------------- |
+| `flex-start`    | Tutte le righe in alto                      |
+| `flex-end`      | Tutte le righe in basso                     |
+| `center`        | Centrate verticalmente                      |
+| `space-between` | Spazio solo tra righe                       |
+| `space-around`  | Spazio sopra/sotto ogni riga                |
+| `stretch`       | Righe allungate per riempire il contenitore |
+
+GAP.
+serve per creare spazio tra gli elementi all'interno di un contenitore Flex.
+Funziona sull'asse principale e anche tra righe. Se c'è flex-wrap.
+
+
+gap: 10px;           /* spazio uniforme tra righe e colonne */
+row-gap: 15px;       /* solo tra le righe */
+column-gap: 5px;     /* solo tra le colonne */
+
+PROPRIETÀ FLEX-GROW, FLEX-SHRINK, FLEX - BASIS
+
+| Proprietà     | Descrizione                                                                   |
+| ------------- | ----------------------------------------------------------------------------- |
+| `flex-grow`   | Quanto un elemento può **crescere** rispetto agli altri                       |
+| `flex-shrink` | Quanto un elemento può **restringersi** se non c’è abbastanza spazio          |
+| `flex-basis`  | La **dimensione iniziale** preferita dell’elemento prima che cresca/restringa |
+
+si può scrivere anche così
+flex: <grow> <shrink> <basis>;
 

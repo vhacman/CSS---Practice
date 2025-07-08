@@ -1,0 +1,54 @@
+Cos'è Flexbox?
+Flexbox (abbreviazione di Flexible Box) è un modello di layout CSS che permette di disporre gli elementi
+su una riga o colonna e di adattarli automaticamente alle dimensioni dello schermo o del contenitore.
+È molto utile per creare interfacce flessibili che funzionano bene su tutti i dispositivi.
+
+Usi più comuni del Flexbox
+1. Search Bar
+
+Viene creato un contenitore con 3 elementi:
+Icona di ricerca
+Campo input (dove scrivi la query)
+Bottone "Submit"
+Viene usato display: inline-flex per mantenere il contenitore in linea col testo.
+overflow viene usato per tagliare il testo che eccede.
+Ogni elemento ha delle regole CSS per l’allineamento e lo stile.
+Risultato: Tutti gli elementi appaiono allineati orizzontalmente in una riga. Ma se non usi unità responsive, la barra non si adatta alla finestra.
+
+2.Navigation Bar
+
+Si crea un <ul> (lista non ordinata) con 4 <li> (voci di menu).
+Si usa il selettore universale (*) per azzerare margini e padding imposti dal browser.
+Si definisce il contenitore con:
+display: flex
+flex-flow: combinazione di flex-direction (es. row) e flex-wrap
+justify-content: stretch: gli elementi si adattano all'intera larghezza
+Ogni elemento (li, a) ha regole specifiche.
+Risultato: Il menu è reattivo:
+Su schermi piccoli, le voci si impilano verticalmente.
+Su schermi grandi, tornano orizzontali.
+
+
+3.Image Gallery (Galleria di immagini)
+
+Si crea un contenitore <div> con 6 <img>.
+Il CSS usa di nuovo il selettore * per azzerare margini/padding.
+Il contenitore usa:
+display: flex
+flex-wrap: wrap: consente alle immagini di andare a capo
+justify-content: space-between: spazio uguale tra le immagini
+Le immagini hanno border: 0 e padding per lo stile.
+Risultato: Le immagini si adattano alla dimensione della finestra:
+Su finestre strette, si impilano.
+Su finestre larghe, si distribuiscono in righe multiple.
+
+PROPRITÀ CHIAVE
+
+| Proprietà         | Funzione                                            |
+| ----------------- | --------------------------------------------------- |
+| `display: flex`   | Attiva il layout Flexbox                            |
+| `inline-flex`     | Flex ma inline (come `span`)                        |
+| `flex-wrap`       | Permette agli elementi di andare a capo             |
+| `justify-content` | Allinea gli elementi sull’asse orizzontale          |
+| `flex-flow`       | Shorthand per dire direzione + wrap                 |
+| `overflow`        | Controlla cosa succede quando il contenuto è troppo |

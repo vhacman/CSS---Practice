@@ -1,0 +1,53 @@
+/* Stile della riga principale che contiene label e grafico */
+.row {
+  display: flex;
+  align-items: stretch; /* Allinea verticalmente la label e la barra */
+  margin: 20px;
+}
+
+/* Etichetta a sinistra */
+.row .label {
+  flex: 0 0 150px; /* Larghezza fissa */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* Contenitore delle barre */
+.container {
+  display: flex;
+  flex-direction: column; /* <-- Righe una sotto l'altra */
+  justify-content: flex-start; /* Allinea le barre in alto */
+  align-items: flex-start;     /* Allinea le barre a sinistra */
+  gap: 10px;
+  flex: 1;
+}
+
+
+/* Stile generico per ogni barra */
+.dish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  border-radius: 4px;
+}
+
+/* Barre specifiche */
+.pasta {
+  width 35%;
+  background-color: #F4A261;
+}
+
+.pizza {
+  width: 50%;
+  background-color: #2A9D8F;
+}
+
+.burrito {
+  width: 15%;
+  background-color: #E76F51;
+}

@@ -1,0 +1,30 @@
+
+li:hover {
+	color:red;
+}
+
+li:active {
+	color: grey;
+}
+
+
+a:visited {
+	color: green;
+}
+
+button:hover {
+	background-color: blue;
+}
+
+button:active {
+	background-color: red;
+}
+
+tr:nth-child(even){
+	background-color: pink;
+	font-weight: bold;
+}
+
+tr:nth-child(odd){
+	background-color: lightskyblue;
+}

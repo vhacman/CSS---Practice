@@ -1,0 +1,49 @@
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #333;
+    border-radius: 50%;
+    background: #eef;
+    margin: 2em auto;
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: center bottom;
+    background: #c33;
+}
+
+.minutes {
+    width: 4px;
+    height: 80px;
+    animation: cycle 6s linear infinite;
+  }
+  
+  /* Lancetta delle ore (più corta e lenta) */
+  .hours {
+    width: 6px;
+    height: 60px;
+    animation: cycle 60s linear infinite;
+  }
+  
+  /* Definizione dei keyframes */
+  @keyframes cycle {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+
+  /*  
+        @keyframes nomeAnimazione {
+        Stato iniziale 
+        0%   {  qui le proprietà CSS all’inizio  }
+        Fotogramma intermedio 
+        50%  {  qui le proprietà CSS a metà animazione  }
+        Stato finale 
+        100% {  qui le proprietà CSS alla fine  }
+        }
+  */
+

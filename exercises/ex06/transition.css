@@ -1,0 +1,39 @@
+h1 {
+	display: inline-block;
+	font-size: 3em;
+	margin: 1em;
+	/* Imposto la trasformazione iniziale */
+	transform: rotate(0deg) skewX(0deg);
+	/* Voglio animare TUTTE le trasformazioni in 2s con easing */
+	transition: transform 2s ease;
+}
+
+h1:hover {
+	/* Al passaggio del mouse ruoto e inclino l’elemento */
+	transform: rotate(20deg) skewX(15deg);
+}
+
+.box {
+	display: grid;
+	place-items: center;
+	width: 240px;
+	height: 240px;
+	margin: 100px auto;
+	background: rgb(180, 230, 180);
+	border: 8px solid #4CAF50;
+	border-radius: 12px;
+	/* Definisco quali proprietà animare e in quanto tempo */
+	transition:
+		transform 1.5s ease-in-out,
+		background-color 1.5s ease,
+		opacity 2s ease-out;
+}
+
+.box:hover {
+	/* Ruoto di 60° attorno all’asse Z */
+	transform: rotateZ(60deg);
+	/* Cambio il colore di sfondo */
+	background-color: lightcoral;
+	/* Porto l’opacità al 50% */
+	opacity: 0.5;
+}

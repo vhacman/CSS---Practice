@@ -1,0 +1,43 @@
+/* reset.css */
+
+/* Rimuove margini, padding e bordi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Rimuove lo stile base da elementi tipografici */
+  body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+    margin: 0;
+  }
+  
+  /* Rimuove lo stile da liste */
+  ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Rimuove la formattazione dai link */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Assicura che le immagini non escano dal contenitore */
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Rimuove stile di form base */
+  input, button, textarea, select {
+    font: inherit;
+    color: inherit;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  

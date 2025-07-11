@@ -9,3 +9,4 @@ Contiene piccoli esperimenti e test pratici utili per apprendere e consolidare c
 - `theory/`: contiene esempi pratici che accompagnano lo studio teorico.
 
 - `reset.css/`: libreria di reset
+- `normalize.css/`: libreria di reset
